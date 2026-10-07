@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  
+  <!-- Background squircle -->
+  <rect width="512" height="512" rx="128" fill="url(#bg)" />
+  
+  <!-- Outer glow/rim -->
+  <rect x="8" y="8" width="496" height="496" rx="120" fill="none" stroke="#ffffff" stroke-opacity="0.15" stroke-width="4" />
+
+  <!-- Shopping bag with order checklist symbol -->
+  <g filter="url(#shadow)" transform="translate(96, 80)">
+    <!-- Bag Body -->
+    <rect x="20" y="90" width="280" height="250" rx="36" fill="#ffffff" />
+    
+    <!-- Bag Handle -->
+    <path d="M 80 90 V 60 C 80 20, 240 20, 240 60 V 90" fill="none" stroke="#ffffff" stroke-width="26" stroke-linecap="round" />
+    
+    <!-- Accent Line (Receipt clip) -->
+    <rect x="70" y="140" width="180" height="18" rx="9" fill="#10B981" />
+    
+    <!-- Line items simulation -->
+    <rect x="70" y="180" width="130" height="14" rx="7" fill="#CBD5E1" />
+    <rect x="220" y="180" width="30" height="14" rx="7" fill="#10B981" />
+    
+    <rect x="70" y="210" width="110" height="14" rx="7" fill="#CBD5E1" />
+    <rect x="220" y="210" width="30" height="14" rx="7" fill="#10B981" />
+
+    <!-- Total badge (AMD symbol) -->
+    <circle cx="160" cy="275" r="32" fill="#064E3B" />
+    <text x="160" y="286" font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif" font-weight="900" font-size="28" fill="#34D399" text-anchor="middle">֏</text>
+  </g>
+</svg>

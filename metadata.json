@@ -1,0 +1,6 @@
+{
+  "name": "Orders — Приложение заказов",
+  "description": "Быстрое оформление заказов, расчет в AMD, отправка в WhatsApp и сохранение чека в виде изображения.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
